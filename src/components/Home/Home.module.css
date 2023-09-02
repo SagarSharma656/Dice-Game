@@ -1,0 +1,54 @@
+.App {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image img{
+    width: 450px;
+  }
+  
+  .text h1{
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .text>div{
+    display: flex;
+    justify-content: end;
+  }
+
+
+  @media only screen and (max-width: 1100px){
+    .image img{
+      width: 300px;
+    }
+    .text h1{
+      font-size: 2.8rem;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    .container{
+      flex-direction: column;
+    }
+    .image img{
+      width: 250px;
+    }
+    .text h1{
+      font-size: 2rem;
+    }
+    .text>div{
+      justify-content: center;
+    }
+  }
